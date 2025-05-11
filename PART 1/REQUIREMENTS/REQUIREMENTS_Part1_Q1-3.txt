@@ -1,0 +1,52 @@
+# ─────────────  environment A  ── “PART1_Q1-Q3.yml” ─────────────
+name: project_1            # Windows, Part1 Q1–3  (PyTorch stack)
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - ipython
+  - jupyter
+  - numpy=2.0
+  - pandas=2.2
+  - matplotlib=3.10
+  - seaborn=0.13
+  - scipy=1.15
+  - scikit-learn=1.6
+  - statsmodels=0.14
+  - stumpy=1.13
+  - polars=1.25
+  - tsfresh=0.21
+  - umap-learn=0.5
+  - pytorch=2.5.1=py3.10_cuda11.8_cudnn9_0
+  - torchvision=0.20.1
+  - torchaudio=2.5.1
+  - pytorch-cuda=11.8
+  - ipykernel=6.29
+  - jupyterlab=4.3
+  - notebook=7.3
+  - matplotlib-inline
+  - anyio=4.6.2
+  - argon2-cffi
+  - bleach
+  - cffi
+  - tornado
+  - traitlets
+  - pyzmq
+  - etc.
+  # ---- pip-only extras ----
+  - pip:
+      - shap==0.45.0
+      - patsy==1.0.1
+      - pywavelets==1.8.0
+      - pynndescent==0.5.13
+      - numba==0.61.0
+      - plotly==6.0.0
+      - catboost==1.2.7
+      - xgboost==3.0.0
+      - lightgbm==4.6.0
+      - fastparquet==2024.11.0
+      - tqdm==4.67.1
+      - tzdata==2025.2
