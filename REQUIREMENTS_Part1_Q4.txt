@@ -1,0 +1,26 @@
+# ─────────── environment B ── “PART1_Q4.yml” ───────────
+# Used only for Part-4 Neural Additive Model experiments
+# -----------------------------------------------------
+name: nam_tf
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=2.0
+  - pandas=2.2
+  - scikit-learn=1.6
+  - matplotlib=3.10
+  - seaborn=0.13
+  - tensorflow=2.16           # GPU hidden via CUDA_VISIBLE_DEVICES=""
+  - tensorflow-probability=0.24
+  - tensorflow-addons         # ReLU / weight-decay used in LocalNAM
+  - shap=0.45                 # SHAP plots for sanity-check
+  - umap-learn=0.5            # optional manifold plots
+  - ipython
+  - ipykernel=6.29
+  - jupyter
+  - jupyterlab=4.3
+  - pip:
+      - keras-tuner==1.4.5    # Bayesian HP search wrapper
+      - tqdm==4.67.1          # progress bars
